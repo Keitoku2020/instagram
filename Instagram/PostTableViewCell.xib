@@ -9,11 +9,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="460" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="Instagram" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="338" height="460"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="462" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="Instagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="462"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PostTableViewCell" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="338" height="460"/>
+                <rect key="frame" x="0.0" y="0.0" width="338" height="462"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6gz-Dc-GbK">
@@ -61,8 +61,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コメント:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0r-Gf-WCZ">
-                        <rect key="frame" x="10" y="431.5" width="318" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コメント:" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0r-Gf-WCZ">
+                        <rect key="frame" x="10" y="431.5" width="318" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -71,7 +71,6 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="tC1-6p-wLP" secondAttribute="trailing" constant="10" id="5Jn-F2-VOT"/>
                     <constraint firstItem="1WO-Lm-4Ed" firstAttribute="centerY" secondItem="zaN-IQ-PEw" secondAttribute="centerY" id="6uH-aw-GIt"/>
-                    <constraint firstAttribute="bottom" secondItem="Y0r-Gf-WCZ" secondAttribute="bottom" constant="7.5" id="8bQ-vF-LbP"/>
                     <constraint firstItem="6gz-Dc-GbK" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="E2M-aG-W1a"/>
                     <constraint firstItem="6gz-Dc-GbK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="EGR-Jg-bMD"/>
                     <constraint firstItem="cgk-13-SPZ" firstAttribute="leading" secondItem="cCV-4V-zhE" secondAttribute="trailing" constant="50" id="EgA-Gi-2ip"/>
@@ -81,6 +80,7 @@
                     <constraint firstAttribute="trailing" secondItem="U8W-pz-Vt9" secondAttribute="trailing" constant="10" id="NyT-9o-idQ"/>
                     <constraint firstItem="tC1-6p-wLP" firstAttribute="top" secondItem="U8W-pz-Vt9" secondAttribute="bottom" constant="10" id="UmI-lv-cvv"/>
                     <constraint firstAttribute="trailing" secondItem="Y0r-Gf-WCZ" secondAttribute="trailing" constant="10" id="Vmc-7q-zj5"/>
+                    <constraint firstAttribute="bottom" secondItem="Y0r-Gf-WCZ" secondAttribute="bottom" constant="10" id="Vye-BP-4nY"/>
                     <constraint firstItem="6gz-Dc-GbK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="bNm-p4-Cmf"/>
                     <constraint firstItem="tC1-6p-wLP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="d7S-YX-LlL"/>
                     <constraint firstItem="U8W-pz-Vt9" firstAttribute="top" secondItem="zaN-IQ-PEw" secondAttribute="bottom" constant="10" id="f4a-s0-ll0"/>
@@ -102,7 +102,7 @@
                 <outlet property="likeLabel" destination="1WO-Lm-4Ed" id="IdP-Xh-8Lk"/>
                 <outlet property="postImageView" destination="6gz-Dc-GbK" id="qTh-Lg-PUr"/>
             </connections>
-            <point key="canvasLocation" x="152.17391304347828" y="176.11607142857142"/>
+            <point key="canvasLocation" x="152.17391304347828" y="176.78571428571428"/>
         </tableViewCell>
     </objects>
     <resources>

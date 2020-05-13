@@ -35,11 +35,9 @@ class PostTableViewCell: UITableViewCell {
 
         self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
 
-        if postData.comment == nil {
-            self.label.text = ""
-        } else {
-            self.label.text = "\(postData.name!) : \(postData.comment!)"
-        }
+        let comment = postData.comment
+        let sentence = comment.joined(separator: "\n")
+        self.label.text = sentence
 
         self.dateLabel.text = ""
         if let date = postData.date {
@@ -60,4 +58,4 @@ class PostTableViewCell: UITableViewCell {
             }
 
         }
-}
+    }

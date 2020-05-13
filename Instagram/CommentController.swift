@@ -20,11 +20,19 @@ class CommentController: UIViewController {
         
         self.dismiss(animated: true, completion: nil)
         
-        let postDic = ["comment": self.comments.text!] as [String : Any]
+        let name = Auth.auth().currentUser?.displayName
         
-        let postRef = Firestore.firestore().collection(Const.PostPath).document(hello.id)
+        if (Auth.auth().currentUser?.uid) != nil {
+            
+            var updateValue: FieldValue!
+
+            let say: String = name! + " : " + self.comments.text!
         
-        postRef.updateData(postDic)
+            updateValue = FieldValue.arrayUnion([say])
+        
+            let postRef = Firestore.firestore().collection(Const.PostPath).document(hello.id)
+            postRef.updateData(["comment": updateValue!])
+        }
 
         SVProgressHUD.showSuccess(withStatus: "投稿しました")
     }
